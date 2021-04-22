@@ -1,15 +1,14 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
 // local files
-import EventComponent from './events/EventComponent'
+import UserSearch from "./refs/UserSearch";
 
 const App = () => {
-    return <div>
-        <EventComponent />
-    </div>
-}
+    return (
+        <div>
+            <UserSearch />
+        </div>
+    );
+};
 
-ReactDOM.render(
-    <App />,
-    document.querySelector('#root')
-)
+ReactDOM.render(<App />, document.querySelector("#root"));
